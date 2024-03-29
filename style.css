@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(128, 131, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    gap: 10px; 
+    font-family: "Changa";
+}
+.heading{
+    color: aqua;
+    text-shadow: 3px 3px 2px rgba(86,153,184,1);
+    letter-spacing: 3px;
+}
+.container{
+    background-color: white;
+    width: 80vw;
+    height: 85vh;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.greet{
+    align-self: flex-start;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+}
+.greet input{
+    border: none;
+    font-size: 21px;
+    font-weight: 400;
+}
+/* FORM */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.double{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+.form-harcama,
+.form-fiyat{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+    
+}
+.form-durum{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    border: none;
+    border-bottom: 2px solid gray;
+    padding: 10px 10px;
+    
+}
+input:focus{
+    border-bottom: 2px solid crimson;
+
+}
+.ekle-btn{
+    background-color:crimson;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.toplam{
+    background-color: rgb(0, 31, 31);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+#toplam-bilgi{
+    color: aqua;
+}
+/* LİSTE */
+.liste{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 40px;
+    overflow:auto;
+}
+#fadeoutDown{
+    animation: fadeOutDown 3s ease-in-out forwards; 
+}
+
+/* Animasyon Tanımı */
+@keyframes fadeOutDown {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+.harcama{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgb(44, 11, 11);
+    
+}
+/* select section */
+#filter-select{
+    padding: 10px 15px;
+    background-color: aqua;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'changa';
+    outline: none;
+    border: none;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.buttons img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;  
+}
+.harcama h2:nth-child(2){
+    color: red;
+}
+.payed{
+    opacity: 0.7;
+}
+.payed h2:nth-child(1){
+    text-decoration:line-through;
+}
+.payed h2:nth-child(2){
+    color: green;
+}

@@ -9,7 +9,7 @@ const inputName = document.getElementById("ad");
 
 
 //* Tarayıcı deposunda saklama;
-const userName = localStorage.getItem("name");
+const userName = localStorage.getItem("name")||"";
 inputName.value = userName;
 
 //* localStorag'a kullanıcının girdiği ismi saklama;

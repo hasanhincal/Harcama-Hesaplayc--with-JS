@@ -5,6 +5,17 @@ const formBtn = document.querySelector(".ekle-btn");
 const liste = document.querySelector(".liste");
 const toplamBilgi = document.querySelector("#toplam-bilgi");
 const selectFilter = document.querySelector("#filter-select");
+const inputName = document.getElementById("ad");
+
+
+//* Tarayıcı deposunda saklama;
+const userName = localStorage.getItem("name");
+inputName.value = userName;
+
+//* localStorag'a kullanıcının girdiği ismi saklama;
+inputName.addEventListener("change",(e)=>{
+  localStorage.setItem("name", e.target.value)
+});
 
 // izleme işlemleri
 formBtn.addEventListener("click", addExpense);
